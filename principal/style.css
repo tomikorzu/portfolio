@@ -21,7 +21,8 @@ header{
     width: 100%;
     height: 60px;
     background-color: #363636;
-    z-index: 0;
+    z-index: 1;
+    position: fixed;
 }
 
 .menubar{
@@ -90,13 +91,17 @@ header{
 }
 
 .navbar{
-    margin: 0 40px;
+    padding: 0 40px;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #6b6b6b;
     box-sizing: border-box;
+    background-color: #363636;
+}
+header{
+    background-color: #363636;
 }
 
 .navbar h2{
@@ -141,3 +146,29 @@ header{
     transition: .5s;
 }
 
+main{
+    background-color: #00000050;
+    z-index: -2;
+}
+
+#home{
+    height: 100vh;
+    background: url(../img/yo.jpeg) top / cover fixed;
+    z-index: -3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home h1{
+    font-size: 32px;
+    color: #fff;
+    margin: 0;
+}
+
+#home p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
