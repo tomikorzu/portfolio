@@ -28,17 +28,10 @@ header{
     display: none;
 }
 
-.close-menubar{
-    display: none;
-}
+
 
 @media (max-width: 768px) {
 
-    .sections{
-        opacity: 0;
-        visibility: hidden;
-    }
-    
     .navbar .sections{
         z-index: -1;
         display: flex;
@@ -51,6 +44,8 @@ header{
         padding: 20px 0;
         background-color: #363636;
         box-shadow: 0 0 0 100vmax #00000080;
+        opacity: 0;
+        transform: translateY(-205px);
     }
     
     
@@ -62,9 +57,36 @@ header{
         border: none;
     }
 
-    .close{
-        display: none;
+    .list{
+        appearance: none;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        background: url(../svg/list.svg) center;
+        margin: 0;
+        transform: translateY(-2px);
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        margin: 0 45px 0 0;
     }
+
+    .list:checked{
+        background: url(../svg/x.svg) center no-repeat;
+        width: 32px;
+        height: 32px;
+    }
+
+    .list:checked ~ .sections{
+        opacity: 1 ;
+        transform: translateY(0);
+        transition: .5s;
+    }
+
+    .links{
+        margin: 0 45px 0 0;
+    }
+
 }
 
 .navbar{
