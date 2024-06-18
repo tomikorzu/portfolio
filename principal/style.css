@@ -120,7 +120,7 @@ header{
 }
 
 .sections a:hover{
-    color: #fff;
+    color: #34b7a7;
     transition: 0.5s;
 }
 
@@ -139,15 +139,17 @@ header{
 }
 
 .links a:hover{
-    color: #fff;
+    color: #34b7a7;
     transition: .5s;
 }
 
+/* ---- Main ---- */
 main{
-    background-color: #00000050;
+    background-color: #4e595f50;
     z-index: -2;
 }
 
+/* ---- Home ---- */
 #home{
     height: 100vh;
     background: url(../img/yo.png) center / cover fixed;
@@ -188,38 +190,109 @@ main{
 
 
 #about{
-    color: #fff;
+    padding: 80px 40px 0 40px;
+    color: #000;
 }
 
-.info{
-    padding: 0px 0px 0 40px;
-    height: 100%;
-    background-color: #1c1e30;
-}
-
-.info h2{
+#about h2{
+    font-size: 26px;
+    color: #08244b;
     margin: 0;
-    font-size: 24px;
 }
 
-.info p{
+#about h3{
+    color: #173B6C;
+    margin: 0;
+    font-size: 22px;
+}
+
+#about h4{
+    margin: 0;
+    font-size: 18px;
+}
+#about h5{
+    margin: 0;
     font-size: 16px;
 }
 
-.line{
-    padding: 70px 0 0 0;
+#about p, #about span{
+    font-size: 14px;
 }
 
-hr{
-    width: 20%;
-    border-color: #2adbc7;
+#about p{
+    margin: 0;
+}
+
+#about .period span{
+    color: #587cad;
+}
+
+#about hr{
+    border-color: #08244b;
+    width: 60px;
     position: absolute;
+}
+
+
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    background-color: #e4e4e4;
+}
+
+.info{
+
+}
+
+.datos, .datos h3{
+    color: #e4e4e4 !important;
+    
+}
+
+.datos{
+    background-color: #08244b;
+    padding: 30px 30px 30px 30px;
+}
+
+
+
+.educacion{
+    padding: 30px 0 0 50px;
+}
+
+.experiencia{
+    padding: 30px 0 0 400px;
+}
+
+
+.period{
+    display: flex;
+    justify-content: space-between;
 }
 
 .habilidades{
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
+
+
+
+@media (max-width: 768px){
+    .container2{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
