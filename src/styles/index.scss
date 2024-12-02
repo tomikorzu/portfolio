@@ -1,0 +1,67 @@
+@mixin d-flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button, a{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: currentColor;
+    transition: filter .4s, opacity .4s;
+    &:disabled{
+        opacity: .6;
+    }
+    &:hover{
+        filter: brightness(1.10);
+    }
+}
+a{
+    padding: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.fade-in{
+    animation: fadeIn .4s ease-in-out;
+}
+.fade-out{
+    animation: fadeOut .4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
