@@ -1,5 +1,10 @@
 ---
 import "../styles/index.scss";
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+import Navbar from "../components/Navbar/Navbar.jsx";
+import "../assets/fonts/fonts.css";
+import "../assets/icons/fontawesome/css/all.min.css";
 ---
 
 <html lang="en">
@@ -8,9 +13,11 @@ import "../styles/index.scss";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
+    <Navbar client:load />
     <slot />
   </body>
 </html>
