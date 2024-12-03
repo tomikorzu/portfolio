@@ -30,7 +30,7 @@ export default function Navbar() {
           alt="My Profile Image"
           className={styles["logo-link"]}
         />
-        <h2 className="font-bold text-xl text-center">Tomás Korzusehec</h2>
+        <h2 className="font-extrabold text-xl text-center">Tomás Korzusehec</h2>
         <ul
           className={`flex items-center justify-center gap-5 m-2.5 ${styles.socialLinks}`}
         >
@@ -66,6 +66,14 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
+        <a
+          href=""
+          download
+          className="download-cv flex items-center justify-center absolute bottom-4 bg-slate-600 rounded-md w-full gap-2 text-normal"
+        >
+          <i className="fa-solid fa-download"></i>
+          <span>Download CV</span>
+        </a>
       </header>
     </>
   );

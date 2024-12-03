@@ -1,11 +1,11 @@
 export const navbarSections = [
     {
-        "icon": "fa-solid fa-home",
+        "icon": "bi bi-house-door",
         "title": "Home",
         "url": "/"
     },
     {
-        "icon": "fa-solid fa-user",
+        "icon": "fa-regular fa-user",
         "title": "About",
         "url": "/about"
     },
@@ -20,7 +20,7 @@ export const navbarSections = [
         "url": "/services"
     },
     {
-        "icon": "fa-solid fa-envelope",
+        "icon": "fa-regular fa-envelope",
         "title": "Contact",
         "url": "/contact"
     }
