@@ -1,9 +1,14 @@
 import { navbarSections } from "../../utils/navbar-sections.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
   const [isMenuActive, setIsMenuActive] = useState(false);
+  const [currentSection, setCurrentSection] = useState("");
+
+  useEffect(() => {
+    setCurrentSection(window.location.pathname);
+  }, []);
 
   function handleToggleBtn() {
     setIsMenuActive(!isMenuActive);
@@ -57,7 +62,14 @@ export default function Navbar() {
             {navbarSections.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.url}>
+                  <a
+                    href={item.url}
+                    className={
+                      item.url === currentSection.toLowerCase()
+                        ? styles["path-active"]
+                        : ""
+                    }
+                  >
                     {item.icon && <i className={item.icon}></i>}
                     {item.title}
                   </a>
