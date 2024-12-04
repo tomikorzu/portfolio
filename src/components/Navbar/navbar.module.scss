@@ -19,22 +19,6 @@
     border: 5px solid #ffffff20;
   }
 
-  .download-cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    background-color: #104d94;
-    color: #f1f1f1;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: background-color 0.4s;
-    &:hover {
-      background-color: #2683ee;
-    }
-  }
-
   nav {
     padding-left: 20px;
     padding-top: 10px;
@@ -75,11 +59,11 @@
       transition: background-color 0.4s;
     }
     .path-active {
-        color: #f1f1f1;
-        pointer-events: none;
-        i{
-            color: #2683ee;
-        }
+      color: #f1f1f1;
+      pointer-events: none;
+      i {
+        color: #2683ee;
+      }
     }
   }
 }

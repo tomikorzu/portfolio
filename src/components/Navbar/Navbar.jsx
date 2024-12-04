@@ -78,14 +78,6 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
-        <a
-          href=""
-          download
-          className="download-cv flex items-center justify-center absolute bottom-4 bg-slate-600 rounded-md w-full gap-2 text-normal"
-        >
-          <i className="fa-solid fa-download"></i>
-          <span>Download CV</span>
-        </a>
       </header>
     </>
   );
