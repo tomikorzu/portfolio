@@ -74,6 +74,13 @@
       cursor: pointer;
       transition: background-color 0.4s;
     }
+    .path-active {
+        color: #f1f1f1;
+        pointer-events: none;
+        i{
+            color: #2683ee;
+        }
+    }
   }
 }
 
