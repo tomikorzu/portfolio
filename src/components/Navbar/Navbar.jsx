@@ -52,6 +52,7 @@ export default function Navbar() {
             <a
               className="text-xl bg-slate-800 rounded-full"
               href="https://www.linkedin.com/in/TomasKorzusehec"
+              target="_BLANK"
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
