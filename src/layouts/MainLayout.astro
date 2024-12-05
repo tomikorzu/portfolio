@@ -2,6 +2,7 @@
 import "../styles/index.scss";
 import { ViewTransitions } from "astro:transitions";
 const { title } = Astro.props;
+import Navbar from "../components/Navbar/Navbar.tsx";
 import "../assets/fonts/fonts.css";
 import "../assets/icons/fontawesome/css/all.min.css";
 import "../assets/icons/bootstrap/font/bootstrap-icons.css";
@@ -17,6 +18,7 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
     <ViewTransitions />
   </head>
   <body>
+    <Navbar client:load />
     <slot />
   </body>
 </html>

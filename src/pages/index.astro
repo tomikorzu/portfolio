@@ -1,11 +1,59 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../styles/welcome.scss";
 ---
 
-<div class="hero min-h-screen flex flex-col justify-center items-center">
-  <Layout title="Welcome 👋🏻">
-    <h1 class="font-extrabold">hey guys</h1>
-    <a href="/about">About</a>
-    <button disabled={true}>Go back</button>
-  </Layout>
-</div>
+<Layout title="Welcome 👋🏻">
+  <div
+    class="hero min-h-screen flex flex-col justify-center items-start m-auto w-fit"
+  >
+    <div class="flex gap-2.5 items-center">
+      <img
+        src="/me.jpeg"
+        alt=""
+        class="w-20 object-cover rounded-full h-20 border-4 border-blue-800"
+      />
+      <a
+        href="https://gm2dev.com"
+        target="_blank"
+        class="rounded-full p-2.5 bg-slate-950 max-w-fit max-h-fit text-sm border relative z-0"
+      >
+        <span class="span-bg"></span>
+        Working in GM2Dev</a
+      >
+    </div>
+    <h1 class="font-extrabold text-3xl">Hey I am Tomás Korzusehec</h1>
+    <h2>
+      Full-Stack Developer from Argentina 🇦🇷 with experience in React, Astro,
+      NodeJS and other tecnologies.
+    </h2>
+  </div>
+</Layout>
+
+<style>
+  body {
+    background: radial-gradient(circle, #090921, rgb(5, 1, 51));
+  }
+  .hero {
+    color: #f1f1f1;
+  }
+  .span-bg {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg, #ff0080, #7928ca);
+    animation: rotateBorder 2s linear infinite;
+  }
+
+  @keyframes rotateBorder {
+    from {
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+    to {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
+  }
+</style>
