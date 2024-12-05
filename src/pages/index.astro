@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/welcome.scss";
+import { welcomeData } from "../utils/welcomeData.ts";
 ---
 
 <Layout title="Welcome 👋🏻">
@@ -9,23 +10,26 @@ import "../styles/welcome.scss";
   >
     <div class="flex gap-2.5 items-center">
       <img
-        src="/me.jpeg"
-        alt=""
+        src={welcomeData.image}
+        alt="My profile picture"
         class="w-20 object-cover rounded-full h-20 border-4 border-blue-800"
       />
       <a
-        href="https://gm2dev.com"
+        href={welcomeData.workPage
+          ? "https://gm2dev.com"
+          : "https://linkedin.com/in/tomaskorzusehec"}
         target="_blank"
         class="rounded-full p-2.5 bg-slate-950 max-w-fit max-h-fit text-sm border relative z-0"
       >
-        <span class="span-bg"></span>
-        Working in GM2Dev</a
+        <span
+          class={`span-bg ${welcomeData.actualWork ? "working" : "not-working"}`}
+        ></span>
+        {welcomeData.actualWork ? "Working in GM2Dev" : "Avaible to Work"}</a
       >
     </div>
-    <h1 class="font-extrabold text-3xl">Hey I am Tomás Korzusehec</h1>
+    <h1 class="font-extrabold text-3xl">{welcomeData.title}</h1>
     <h2>
-      Full-Stack Developer from Argentina 🇦🇷 with experience in React, Astro,
-      NodeJS and other tecnologies.
+      {welcomeData.subtitle}
     </h2>
   </div>
 </Layout>
