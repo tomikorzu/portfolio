@@ -1,4 +1,10 @@
-export const navbarSections = [
+type NavbarSectionsTypes = {
+    icon?: string,
+    title: string,
+    url: string
+}
+
+export const navbarSections: NavbarSectionsTypes[] = [
     {
         "icon": "bi bi-house-door",
         "title": "Home",

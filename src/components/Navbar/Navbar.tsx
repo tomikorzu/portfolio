@@ -1,10 +1,10 @@
-import { navbarSections } from "../../utils/navbar-sections.js";
+import { navbarSections } from "./navbar-sections.ts";
 import { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
-  const [isMenuActive, setIsMenuActive] = useState(false);
-  const [currentSection, setCurrentSection] = useState("");
+  const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
+  const [currentSection, setCurrentSection] = useState<string>("");
 
   useEffect(() => {
     setCurrentSection(window.location.pathname);
@@ -41,7 +41,7 @@ export default function Navbar() {
         >
           <li>
             <a
-              className="text-xl bg-slate-800 rounded-full"
+              className="text-lg bg-slate-800 rounded-full"
               href="https://github.com/tomikorzu"
               target="_BLANK"
             >
@@ -57,6 +57,15 @@ export default function Navbar() {
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
+          <li>
+            <a
+              className="text-lg bg-slate-800 rounded-full"
+              href="https://calendly.com/tomykorzu/30min?month=2024-12"
+              target="_BLANK"
+            >
+              <i className="fa-solid fa-calendar-days"></i>
+            </a>
+          </li>
         </ul>
         <nav>
           <ul>
@@ -64,7 +73,7 @@ export default function Navbar() {
               return (
                 <li key={index}>
                   <a
-                    href={item.url}
+                    href={item.url !== "/contact" ? item.url : "mailto:tomykorzu@icloud.com"}
                     className={
                       item.url === currentSection.toLowerCase()
                         ? styles["path-active"]
