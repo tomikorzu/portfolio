@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Error 404 🚫">
+  <h1>404</h1>
+  <h2>Ooops Page Not Found!</h2>
+  <p class="py-0.5">The page you were looking for doesn´t exists</p>
+  <a href="/" class="text-lg text-white p-0">Return Home</a>
+</Layout>
+
+<style>
+  body {
+    background-color: #00041b;
+    color: #798bf1;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+      font-size: 6em;
+      font-weight: bold;
+      line-height: normal;
+    }
+    h2 {
+      line-height: normal;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+</style>
