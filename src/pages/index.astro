@@ -10,7 +10,7 @@ import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
     <ThemeButton client:load />
   </header>
   <main
-    class="overflow-hidden min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#111] dark:text-[#f1f1f1]"
+    class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#111] dark:text-[#f1f1f1]"
   >
     <div class="flex gap-1.5 items-center">
       <img
@@ -64,6 +64,9 @@ import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
 </Layout>
 
 <style>
+    body{
+        overflow: hidden;
+    }
   .not-working {
     background-image: conic-gradient(
       from 90deg at 50% 50%,
