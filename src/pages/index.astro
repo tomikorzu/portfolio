@@ -2,11 +2,15 @@
 import SocialLinks from "../components/SocialLinks/SocialLinks.tsx";
 import Layout from "../layouts/Layout.astro";
 import { welcomeData } from "../utils/welcomeData.ts";
+import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
 ---
 
-<Layout title="Welcome 👋🏻">
-  <div
-    class="hero min-h-screen flex flex-col justify-center items-start m-auto w-fit"
+<Layout title="Welcome 👋🏻" background="true">
+  <header>
+    <ThemeButton client:load />
+  </header>
+  <main
+    class="overflow-hidden min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#111] dark:text-[#f1f1f1]"
   >
     <div class="flex gap-1.5 items-center">
       <img
@@ -21,7 +25,7 @@ import { welcomeData } from "../utils/welcomeData.ts";
         target="_blank"
         class="flex items-center transition md:justify-center"
       >
-        <div class="flex items-center">
+        <div class="flex items-center hover:scale-105 transition duration-300">
           <span class="relative inline-flex overflow-hidden rounded-full p-0.5">
             <span
               class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${welcomeData.actualWork ? "working" : "not-working"}`}
@@ -39,21 +43,27 @@ import { welcomeData } from "../utils/welcomeData.ts";
         </div></a
       >
     </div>
-    <h1 class="font-extrabold text-3xl">{welcomeData.title}</h1>
-    <h2 class="max-w-xl">
+    <h1 class="font-extrabold text-3xl text-center xs:">{welcomeData.title}</h1>
+    <h2 class="max-w-md text-center font-bold dark:text-[#cdced1] text-[#111]">
       {welcomeData.subtitle}
     </h2>
     <SocialLinks />
-    <a href="/about" class="bg-slate-800 rounded-md hover:brightness-125"
-      >Get Started!</a
+    <a
+      href="/about"
+      class="bg-[#3c5ac0] rounded-xl hover:filter-[brightness(115%)]"
+      >Continue</a
     >
-  </div>
+  </main>
+  <footer
+    class="fixed bottom-0 w-full flex justify-center items-center bg-[#00000060]"
+  >
+    <p class="text-center text-md p-2.5 text-white">
+      © 2024 Tomas Korzusehec. All rights reserved.
+    </p>
+  </footer>
 </Layout>
 
 <style>
-  body {
-    background: radial-gradient(circle, #090921, rgb(5, 1, 51));
-  }
   .not-working {
     background-image: conic-gradient(
       from 90deg at 50% 50%,
@@ -61,6 +71,9 @@ import { welcomeData } from "../utils/welcomeData.ts";
       #13aa96 50%,
       #25c293 100%
     );
+  }
+  .hero {
+    animation: appear 0.3s linear forwards;
   }
 
   .working {
@@ -70,5 +83,28 @@ import { welcomeData } from "../utils/welcomeData.ts";
       #6d0dcc 50%,
       #ff0080 100%
     );
+  }
+
+  @keyframes float {
+    from {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 1.25;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
   }
 </style>

@@ -4,7 +4,7 @@ export const welcomeData: WelcomeDataTypes = {
   workPage: "https://gm2dev.com",
   title: "Hey, I am Tomás Korzusehec",
   subtitle:
-    "Full-Stack Developer from Argentina 🇦🇷 with experience in React, Astro, NodeJS and other tecnologies",
+    "Full-Stack Developer from Argentina 🇦🇷 with experience in React, Astro, NodeJS, SQLite and other tecnologies",
 };
 
 type WelcomeDataTypes = {

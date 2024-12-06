@@ -6,6 +6,7 @@
 body {
   font-family: "Open-sans";
   color: #f1f1f1;
+  transition: color .4s, background .4s;
 }
 
 *,
@@ -66,4 +67,17 @@ input {
   to {
     opacity: 0;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input {
+  transition: color 0.4s;
 }
