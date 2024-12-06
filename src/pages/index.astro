@@ -1,16 +1,12 @@
 ---
 import SocialLinks from "../components/SocialLinks/SocialLinks.tsx";
 import Layout from "../layouts/Layout.astro";
-import { welcomeData } from "../utils/welcomeData.ts";
-import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
+import { welcomeData } from "../data/welcomeData.ts";
 ---
 
 <Layout title="Welcome 👋🏻" background="true">
-  <header>
-    <ThemeButton client:load />
-  </header>
   <main
-    class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#111] dark:text-[#f1f1f1]"
+    class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#f1f1f1]"
   >
     <div class="flex gap-1.5 items-center">
       <img
@@ -25,7 +21,7 @@ import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
         target="_blank"
         class="flex items-center transition md:justify-center"
       >
-        <div class="flex items-center hover:scale-105 transition duration-300">
+        <div class="flex items-center transition duration-300">
           <span class="relative inline-flex overflow-hidden rounded-full p-0.5">
             <span
               class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${welcomeData.actualWork ? "working" : "not-working"}`}
@@ -43,30 +39,30 @@ import ThemeButton from "../components/ThemeButton/ThemeButton.tsx";
         </div></a
       >
     </div>
-    <h1 class="font-extrabold text-3xl text-center xs:">{welcomeData.title}</h1>
-    <h2 class="max-w-md text-center font-bold dark:text-[#cdced1] text-[#111]">
+    <h1 class="font-extrabold text-[22px] sm:text-2xl text-center">{welcomeData.title}</h1>
+    <h2 class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]">
       {welcomeData.subtitle}
     </h2>
     <SocialLinks />
     <a
       href="/about"
-      class="bg-[#3c5ac0] rounded-xl hover:filter-[brightness(115%)]"
+      class="bg-[#1d68bd] px-4 py-2 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms]"
       >Continue</a
     >
   </main>
   <footer
     class="fixed bottom-0 w-full flex justify-center items-center bg-[#00000060]"
   >
-    <p class="text-center text-md p-2.5 text-white">
-      © 2024 Tomas Korzusehec. All rights reserved.
+    <p class="text-center text-sm sm:text-base p-2.5 text-white font-medium">
+      © 2024 Tomás Korzusehec. All rights reserved.
     </p>
   </footer>
 </Layout>
 
 <style>
-    body{
-        overflow: hidden;
-    }
+  body {
+    overflow: hidden;
+  }
   .not-working {
     background-image: conic-gradient(
       from 90deg at 50% 50%,
