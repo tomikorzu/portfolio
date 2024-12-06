@@ -112,23 +112,6 @@
   }
 }
 
-.socialLinks {
-  li {
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      transition: filter 0.4s, background-color 0.4s;
-      &:hover {
-        background-color: #104d94;
-        // filter: brightness(1.25);
-      }
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .toggle-btn {
     display: none;

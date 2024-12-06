@@ -1,6 +1,7 @@
 import { navbarSections } from "./navbar-sections.ts";
 import { useEffect, useState } from "react";
 import styles from "./navbar.module.scss";
+import SocialLinks from "../SocialLinks/SocialLinks.tsx";
 
 export default function Navbar() {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
@@ -36,44 +37,18 @@ export default function Navbar() {
           className={styles["logo-link"]}
         />
         <h2 className="font-extrabold text-xl text-center">Tomás Korzusehec</h2>
-        <ul
-          className={`flex items-center justify-center gap-5 m-2.5 ${styles.socialLinks}`}
-        >
-          <li>
-            <a
-              className="text-lg bg-slate-800 rounded-full"
-              href="https://github.com/tomikorzu"
-              target="_BLANK"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-xl bg-slate-800 rounded-full"
-              href="https://www.linkedin.com/in/TomasKorzusehec"
-              target="_BLANK"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-lg bg-slate-800 rounded-full"
-              href="https://calendly.com/tomykorzu/30min?month=2024-12"
-              target="_BLANK"
-            >
-              <i className="fa-solid fa-calendar-days"></i>
-            </a>
-          </li>
-        </ul>
+        <SocialLinks />
         <nav>
           <ul>
             {navbarSections.map((item, index) => {
               return (
                 <li key={index}>
                   <a
-                    href={item.url !== "/contact" ? item.url : "mailto:tomykorzu@icloud.com"}
+                    href={
+                      item.url !== "/contact"
+                        ? item.url
+                        : "mailto:tomykorzu@icloud.com"
+                    }
                     className={
                       item.url === currentSection.toLowerCase()
                         ? styles["path-active"]

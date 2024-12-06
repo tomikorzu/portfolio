@@ -1,4 +1,5 @@
 ---
+import SocialLinks from "../components/SocialLinks/SocialLinks.tsx";
 import Layout from "../layouts/Layout.astro";
 import { welcomeData } from "../utils/welcomeData.ts";
 ---
@@ -26,7 +27,7 @@ import { welcomeData } from "../utils/welcomeData.ts";
               class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${welcomeData.actualWork ? "working" : "not-working"}`}
             ></span>
             <div
-              class="items-center justify-center w-full px-4 py-2 text-sm rounded-full bg-gray-900 text-white/90 backdrop-blur-md hover:brightness-125 transition duration-500"
+              class="items-center justify-center w-full px-4 py-2 text-sm rounded-full bg-slate-800 text-white/90 backdrop-blur-md hover:brightness-125 transition duration-500"
             >
               {
                 welcomeData.actualWork
@@ -39,10 +40,13 @@ import { welcomeData } from "../utils/welcomeData.ts";
       >
     </div>
     <h1 class="font-extrabold text-3xl">{welcomeData.title}</h1>
-    <h2>
+    <h2 class="max-w-xl">
       {welcomeData.subtitle}
     </h2>
-    <a href="/about">Get Started!</a>
+    <SocialLinks />
+    <a href="/about" class="bg-slate-800 rounded-md hover:brightness-125"
+      >Get Started!</a
+    >
   </div>
 </Layout>
 
