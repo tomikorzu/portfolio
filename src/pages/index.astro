@@ -17,7 +17,7 @@ import { welcomeData } from "../data/welcomeData.ts";
       <a
         href={welcomeData.workPage
           ? "https://gm2dev.com"
-          : "https://linkedin.com/in/tomaskorzusehec"}
+          : "https://www.linkedin.com/in/tomas-korzusehec/"}
         target="_blank"
         class="flex items-center transition md:justify-center"
       >
@@ -39,8 +39,12 @@ import { welcomeData } from "../data/welcomeData.ts";
         </div></a
       >
     </div>
-    <h1 class="font-extrabold text-[22px] sm:text-2xl text-center">{welcomeData.title}</h1>
-    <h2 class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]">
+    <h1 class="font-extrabold text-[22px] sm:text-2xl text-center">
+      {welcomeData.title}
+    </h1>
+    <h2
+      class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]"
+    >
       {welcomeData.subtitle}
     </h2>
     <SocialLinks />

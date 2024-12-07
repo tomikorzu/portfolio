@@ -15,7 +15,7 @@ export default function SocialLinks() {
         <li>
           <a
             className={`text-lg bg-[#3A506B] rounded-full flex justify-center items-center w-10 h-10  hover:brightness-150`}
-            href="https://www.linkedin.com/in/TomasKorzusehec"
+            href="https://www.linkedin.com/in/tomas-korzusehec/"
             target="_BLANK"
             style={{ transition: "all 0.5s" }}
           >
