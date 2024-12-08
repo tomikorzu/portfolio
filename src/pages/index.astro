@@ -1,7 +1,7 @@
 ---
 import SocialLinks from "../components/SocialLinks/SocialLinks.tsx";
 import Layout from "../layouts/Layout.astro";
-import { welcomeData } from "../data/welcomeData.ts";
+import welcomeData from "../data/welcomeData.json";
 ---
 
 <Layout title="Welcome 👋🏻" background="true">
@@ -103,7 +103,7 @@ import { welcomeData } from "../data/welcomeData.ts";
   @keyframes appear {
     from {
       opacity: 0;
-      scale: 1.25;
+      scale: 0.5;
     }
     to {
       opacity: 1;

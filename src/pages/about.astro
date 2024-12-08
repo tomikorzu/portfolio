@@ -1,9 +1,25 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import aboutData from "../data/aboutData.json";
+import Card from "../components/Card/Card";
 ---
 
 <MainLayout title="About Me 🙋🏻">
-  <div class="hero">
-    <h1 class="font-extrabold">hey guys</h1>
-  </div>
-</MainLayout>
+  <div class="p-5 min-h-screen">
+    <h1 class="font-extrabold text-[#c7ccf7] text-2xl">About me</h1>
+    <p class="font-bold text-[#ccc]">{aboutData.generalDescription}</p>
+    <h2 class="font-extrabold text-xl pt-5 text-[#b5bdff]">
+      Professional Objective
+    </h2>
+    <p class="font-bold text-[#ccc]">{aboutData.professionalObjective}</p>
+    <Card type="education" />
+  </div></MainLayout
+>
+
+<style>
+  .container {
+    padding: 20px;
+    background-color: #1a202c;
+    border-radius: 10px;
+  }
+</style>
