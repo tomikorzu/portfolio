@@ -5,21 +5,52 @@ import Card from "../components/Card/Card";
 ---
 
 <MainLayout title="About Me 🙋🏻">
-  <div class="p-5 min-h-screen">
+  <div class="p-5 min-h-screen md:ml-[250px]">
     <h1 class="font-extrabold text-[#c7ccf7] text-2xl">About me</h1>
     <p class="font-bold text-[#ccc]">{aboutData.generalDescription}</p>
     <h2 class="font-extrabold text-xl pt-5 text-[#b5bdff]">
       Professional Objective
     </h2>
     <p class="font-bold text-[#ccc]">{aboutData.professionalObjective}</p>
-    <Card type="education" />
-  </div></MainLayout
->
-
-<style>
-  .container {
-    padding: 20px;
-    background-color: #1a202c;
-    border-radius: 10px;
-  }
-</style>
+    <div class="flex flex-wrap gap-5 justify-between">
+      <div class="w-[49%]">
+        <h2 class="my-2.5 font-bold text-2xl text-[#b5bdff]">Experience</h2>
+        <ul>
+          {
+            aboutData.experience.map((data, index) => {
+              return (
+                <Card
+                  title={data.title}
+                  name={data.name}
+                  startDate={data.startDate}
+                  endDate={data.endDate}
+                  image={data.image}
+                  description={data.description}
+                />
+              );
+            })
+          }
+        </ul>
+      </div>
+      <div class="w-[49%]">
+        <h2 class="my-2.5 font-bold text-2xl text-[#b5bdff]">Education</h2>
+        <ul>
+          {
+            aboutData.education.map((data, index) => {
+              return (
+                <Card
+                  title={data.title}
+                  name={data.name}
+                  startDate={data.startDate}
+                  endDate={data.endDate}
+                  image={data.image}
+                  description={data.description}
+                />
+              );
+            })
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</MainLayout>
