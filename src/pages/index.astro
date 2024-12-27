@@ -1,113 +1,30 @@
 ---
-import SocialLinks from "../components/SocialLinks/SocialLinks.tsx";
 import Layout from "../layouts/Layout.astro";
-import welcomeData from "../data/welcomeData.json";
+
+import GoHomeBtn from "../shared/components/GoHomeBtn/index.tsx";
+import Navbar from "../shared/components/Navbar/index.tsx";
+
+import Home from "../shared/modules/Home/index.astro";
+import Projects from "../shared/modules/Projects/index.astro";
+import Journey from "../shared/modules/Journey/index.astro";
+import SkillSet from "../shared/modules/SkillSet/index.astro";
+import About from "../shared/modules/About/index.astro";
+import Contact from "../shared/modules/Contact/index.astro";
 ---
 
 <Layout title="Welcome 👋🏻" background="true">
-  <main
-    class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#f1f1f1]"
-  >
-    <div class="flex gap-1.5 items-center">
-      <img
-        src={welcomeData.image}
-        alt="My profile picture"
-        class="w-16 object-cover rounded-full h-16"
-      />
-      <a
-        href={welcomeData.workPage
-          ? "https://gm2dev.com"
-          : "https://www.linkedin.com/in/tomas-korzusehec/"}
-        target="_blank"
-        class="flex items-center transition md:justify-center"
-      >
-        <div class="flex items-center transition duration-300">
-          <span class="relative inline-flex overflow-hidden rounded-full p-0.5">
-            <span
-              class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${welcomeData.actualWork ? "working" : "not-working"}`}
-            ></span>
-            <div
-              class="items-center justify-center w-full px-4 py-2 text-sm rounded-full bg-slate-800 text-white/90 backdrop-blur-md hover:brightness-125 transition duration-500"
-            >
-              {
-                welcomeData.actualWork
-                  ? `Working in ${welcomeData.actualWork}`
-                  : "Avaible to Work"
-              }
-            </div>
-          </span>
-        </div></a
-      >
-    </div>
-    <h1 class="font-extrabold text-[22px] sm:text-2xl text-center">
-      {welcomeData.title}
-    </h1>
-    <h2
-      class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]"
-    >
-      {welcomeData.subtitle}
-    </h2>
-    <SocialLinks />
-    <a
-      href="/about"
-      class="bg-[#1d68bd] px-4 py-2 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms]"
-      >Continue</a
-    >
+  <header>
+    <Navbar client:load />
+  </header>
+  <main>
+    <Home />
+    <Projects />
+    <Journey />
+    <SkillSet />
+    <About />
   </main>
-  <footer
-    class="fixed bottom-0 w-full flex justify-center items-center bg-[#00000060]"
-  >
-    <p class="text-center text-sm sm:text-base p-2.5 text-white font-medium">
-      © 2024 Tomás Korzusehec. All rights reserved.
-    </p>
+  <GoHomeBtn />
+  <footer>
+    <Contact />
   </footer>
 </Layout>
-
-<style>
-  body {
-    overflow: hidden;
-  }
-  .not-working {
-    background-image: conic-gradient(
-      from 90deg at 50% 50%,
-      #27df5e 0%,
-      #13aa96 50%,
-      #25c293 100%
-    );
-  }
-  .hero {
-    animation: appear 0.3s linear forwards;
-  }
-
-  .working {
-    background-image: conic-gradient(
-      from 90deg at 50% 50%,
-      #eb1c5a 0%,
-      #6d0dcc 50%,
-      #ff0080 100%
-    );
-  }
-
-  @keyframes float {
-    from {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-
-  @keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }
-</style>
