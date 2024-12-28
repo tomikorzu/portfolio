@@ -11,15 +11,12 @@ export default function GoHomeBtn() {
   }
   useEffect(() => {
     window.addEventListener("scroll", appearBtn);
-
     return () => {
       window.removeEventListener("scroll", appearBtn);
     };
   }, []);
 
   function goHome() {
-    console.log("a");
-
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -29,7 +26,7 @@ export default function GoHomeBtn() {
   return (
     <button
       className={`${
-        !showBtn ? "opacity-[100%]" : "opacity-0"
+        showBtn ? "opacity-[100%]" : "opacity-0 pointer-events-none"
       } fixed bottom-5 right-5 p-4 transition duration-500 bg-[#333] rounded-full flex z-20 text-xl`}
       onClick={goHome}
     >
