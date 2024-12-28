@@ -9,7 +9,7 @@ export default function ScrollNavbar() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
-        setBgClass("bg-[#333]");
+        setBgClass("bg-[#303a4f]");
       } else {
         setBgClass("bg-[transparent]");
       }

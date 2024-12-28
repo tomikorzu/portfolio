@@ -24,8 +24,8 @@ export default function Link({ name }: { name: string }) {
       <a
         href={`#${name}`}
         className={`px-2 py-1 capitalize ${
-          isInView ? "text-[#333]" : "text-[#fff]"
-        } transition duration-500`}
+          isInView ? "text-[#6cc7e8]" : "text-[#fff]"
+        } transition duration-500 hover:text-[#6cc7e8]`}
       >
         {name}
       </a>
