@@ -27,12 +27,12 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
     transition:
       color 0.4s,
       background 0.4s;
-    }
-    
-    *,
-    *::before,
-    *::after {
-      scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -72,6 +72,12 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
   .fade-out {
     animation: fadeOut 0.4s ease-in-out;
   }
+  .show-menu {
+    animation: showMenu 0.2s ease-in-out;
+  }
+  .show-menu-reverse {
+    animation: showMenu 0.2s ease-in-out reverse;
+  }
 
   @keyframes fadeIn {
     from {
@@ -88,6 +94,17 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
     }
     to {
       opacity: 0;
+    }
+  }
+
+  @keyframes showMenu {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
