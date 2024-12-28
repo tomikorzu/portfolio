@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <>
       <ScrollBar sections={sections} />
-      <ToggleBtn />
+      <ToggleBtn sections={sections} />
     </>
   );
 }

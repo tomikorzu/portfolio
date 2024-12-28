@@ -17,7 +17,7 @@ export default function ScrollBar({ sections }: { sections: string[] }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <nav className="fixed top-2 z-50 w-full hidden sm:flex justify-center items-center">
+    <nav className="fixed top-2 z-50 w-full hidden sm:flex justify-center items-center fade-in">
       <ul
         className={`flex ${bgClass} rounded-full px-2 py-1 w-fit transition duration-[.4s]`}
       >

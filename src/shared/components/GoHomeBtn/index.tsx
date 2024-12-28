@@ -27,7 +27,7 @@ export default function GoHomeBtn() {
     <button
       className={`${
         showBtn ? "opacity-[100%]" : "opacity-0 pointer-events-none"
-      } fixed bottom-5 right-5 p-4 transition duration-500 bg-[#333] rounded-full flex z-20 text-xl`}
+      } fixed bottom-5 right-5 p-4 transition duration-[.4s] bg-[#333] rounded-full flex z-20 text-xl`}
       onClick={goHome}
     >
       <i className="fa-solid fa-arrow-up"></i>
