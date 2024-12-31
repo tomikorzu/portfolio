@@ -1,7 +1,7 @@
 export default function SocialLinks() {
   return (
     <>
-      <ul className={`flex items-center justify-center gap-5 m-2.5 ml-0`}>
+      <ul className={`flex items-center sm:ml-2 justify-center gap-4 m-2`}>
         <li>
           <a
             className={`text-lg bg-[#3A506B] rounded-full flex justify-center items-center w-10 h-10  hover:brightness-150`}

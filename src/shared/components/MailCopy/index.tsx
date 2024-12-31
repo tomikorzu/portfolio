@@ -16,12 +16,12 @@ export default function MailCopy() {
         type="text"
         readOnly
         placeholder={email}
-        className="bg-transparent rounded-lg border-[1px] border-solid border-[#ffffff60] rounded-r-none  placeholder:text-slate-50 font-semibold text-md p-2 outline-none"
+        className="bg-transparent rounded-lg border-[1px] border-solid border-[#ffffff60] rounded-r-none  placeholder:text-slate-50 font-semibold text-sm p-2 outline-none"
       />
       <button
         type="button"
         onClick={copyEmail}
-        className="p-2 px-3 border-[1px] border-solid text-white border-[#ffffff60] rounded-lg border-l-0 rounded-l-none"
+        className="p-2 px-3 text-sm border-[1px] border-solid text-white border-[#ffffff60] rounded-lg border-l-0 rounded-l-none"
       >
         <i
           className={`fa-${isCopied ? "solid fa-check" : "regular fa-copy"}`}

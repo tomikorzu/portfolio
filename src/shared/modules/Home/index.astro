@@ -6,10 +6,10 @@ import ActualWork from "../../components/ActualWork/index.tsx";
 ---
 
 <section
-  class="hero min-h-screen flex flex-col justify-center items-start m-auto p-5 w-full gap-1 text-[#f1f1f1]"
+  class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#f1f1f1]"
   id="home"
 >
-  <div class="flex gap-1 items-center">
+  <div class="flex justify-center sm:justify-normal gap-1 items-center">
     <img
       src={welcomeData.image}
       alt="My profile picture"
@@ -20,14 +20,14 @@ import ActualWork from "../../components/ActualWork/index.tsx";
   <h1 class="font-extrabold text-[22px] sm:text-3xl text-center my-1">
     {welcomeData.title}
   </h1>
-  <h2 class="max-w-md text-start text-sm sm:text-base font-bold text-[#cdced1]">
+  <h2 class="max-w-md text-center sm:text-start text-sm sm:text-base font-bold text-[#cdced1]">
     {welcomeData.subtitle}
   </h2>
   <MailCopy client:load />
   <SocialLinks />
   <a
     href="#projects"
-    class="bg-[#1d68bd] text-sm px-4 py-2 mt-2 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms]"
+    class="bg-[#1d68bd] text-sm px-4 py-2 mt-1 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms] w-fit"
     >My Projects</a
   >
 </section>
