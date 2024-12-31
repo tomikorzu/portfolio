@@ -1,60 +1,38 @@
 ---
 import welcomeData from "../../data/welcomeData.json";
 import SocialLinks from "../../components/SocialLinks/index.tsx";
+import MailCopy from "../../components/MailCopy/index.tsx";
+import ActualWork from "../../components/ActualWork/index.tsx";
 ---
 
 <section
-  class="hero min-h-screen flex flex-col justify-center items-center m-auto p-5 w-full gap-1 text-[#f1f1f1]"
+  class="hero min-h-screen flex flex-col justify-center items-start m-auto p-5 w-full gap-1 text-[#f1f1f1]"
   id="home"
 >
-  <div class="flex gap-1.5 items-center">
+  <div class="flex gap-1 items-center">
     <img
       src={welcomeData.image}
       alt="My profile picture"
       class="w-16 object-cover rounded-full h-16"
     />
-    <a
-      href={welcomeData.workPage
-        ? "https://gm2dev.com"
-        : "https://www.linkedin.com/in/tomas-korzusehec/"}
-      target="_blank"
-      class="flex items-center transition md:justify-center"
-    >
-      <div class="flex items-center transition duration-300">
-        <span class="relative inline-flex overflow-hidden rounded-full p-0.5">
-          <span
-            class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${welcomeData.actualWork ? "working" : "not-working"}`}
-          ></span>
-          <div
-            class="items-center justify-center w-full px-4 py-2 text-sm rounded-full bg-slate-800 text-white/90 backdrop-blur-md hover:brightness-125 transition duration-500"
-          >
-            {
-              welcomeData.actualWork
-                ? `Working in ${welcomeData.actualWork}`
-                : "Avaible to Work"
-            }
-          </div>
-        </span>
-      </div></a
-    >
+    <ActualWork />
   </div>
-  <h1 class="font-extrabold text-[22px] sm:text-2xl text-center">
+  <h1 class="font-extrabold text-[22px] sm:text-3xl text-center my-1">
     {welcomeData.title}
   </h1>
-  <h2
-    class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]"
-  >
+  <h2 class="max-w-md text-start text-sm sm:text-base font-bold text-[#cdced1]">
     {welcomeData.subtitle}
   </h2>
+  <MailCopy client:load />
   <SocialLinks />
   <a
     href="#projects"
-    class="bg-[#1d68bd] px-4 py-2 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms]"
-    >Continue</a
+    class="bg-[#1d68bd] text-sm px-4 py-2 mt-2 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms]"
+    >My Projects</a
   >
 </section>
 
-<style>
+<style is:global>
   .not-working {
     background-image: conic-gradient(
       from 90deg at 50% 50%,
