@@ -1,12 +1,14 @@
 ---
+import Section from "../../../layouts/Section.astro";
+import Title from "../../../layouts/Title.astro";
 import projects from "../../data/projectsData.json";
 import Project from "./Project.astro";
 ---
 
-<section id="projects" class="min-h-screen lg:p-0 lg:pt-16 p-5 pt-10 max-w-md mx-auto lg:max-w-none">
-  <h2 class="font-bold text-2xl flex gap-3 items-center">
+<Section title="projects">
+  <Title>
     <i class="fa-solid fa-bars-progress"></i>Projects
-  </h2>
+  </Title>
   <ul class="lg:pt-5 flex gap-2 flex-wrap flex-col w-full justify-center">
     {
       projects.map((project) => {
@@ -14,4 +16,4 @@ import Project from "./Project.astro";
       })
     }
   </ul>
-</section>
+</Section>
