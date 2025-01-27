@@ -26,8 +26,8 @@ export default function GoHomeBtn() {
   return (
     <button
       className={`${
-        showBtn ? "opacity-[100%]" : "opacity-0 pointer-events-none"
-      } fixed bottom-5 right-5 p-4 transition duration-[.4s] bg-[#333] rounded-full flex z-20 text-xl`}
+        showBtn ? "opacity-[100%] hover:brightness-125" : "opacity-0 pointer-events-none"
+      } fixed bottom-5 right-5 p-4 transition duration-[.4s] bg-[#303a4f] rounded-full flex items-center justify-center z-20 text-xl size-12`}
       onClick={goHome}
     >
       <i className="fa-solid fa-arrow-up"></i>
