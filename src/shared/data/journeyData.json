@@ -3,21 +3,21 @@
     "id": 2,
     "title": "Software Engineer I",
     "company": "GM2Dev",
-    "date": "February 2025 - Present",
-    "image": "/gm2.jpg",
+    "date": "Feb 2025 - Now",
+    "image": "/experience/gm2.jpg",
     "description": "I work as a software engineer at GM2Dev. I work on a project that involves creating a web application using React, Node.js, and PostgreSQL. I also work on the backend, creating RESTful APIs and integrating them with the frontend. I work on the frontend, creating reusable components and integrating them with the backend. I work on the database, creating tables, views, and stored procedures. I work on the deployment, creating scripts to automate the deployment process. I work on the testing, creating unit tests, integration tests, and end-to-end tests. I work on the documentation, creating user manuals, technical manuals, and API documentation. I work on the maintenance, fixing bugs, adding features, and improving performance. I work on the monitoring, creating dashboards, alerts, and reports. I work on the security, creating firewalls, encryption, and authentication. I work on the scalability, creating load balancers, caches, and queues. I work on the performance, creating indexes, partitions, and queries",
-    "tecnologies": [
+    "technologies": [
       {
         "name": "NextJS",
-        "image": "/nextjs.png"
+        "image": "/skillset/nextjs.svg"
       },
       {
         "name": "NodeJS",
-        "image": "/node.png"
+        "image": "/skillset/nodejs.svg"
       },
       {
         "name": "Express",
-        "image": "/express.png"
+        "image": "/skillset/express.svg"
       }
     ],
     "url": "https://gm2dev.com/"
@@ -26,37 +26,37 @@
     "id": 1,
     "title": "Full-Stack Internship",
     "company": "GM2Dev",
-    "date": "June 2024 - December 2024",
-    "image": "/gm2.jpg",
+    "date": "Jun 2024 - Dec 2024",
+    "image": "/experience/gm2.jpg",
     "description": "I worked as a full-stack developer intern. I worked on a project that involved creating a web application using React, Node.js, and SQLite. I also worked on the backend, creating RESTful APIs and integrating them with the frontend. I learned a lot about web development and gained valuable experience working in a team.",
-    "tecnologies": [
+    "technologies": [
       {
         "name": "HTML5",
-        "image": "/html.png"
+        "image": "/skillset/html.svg"
       },
       {
         "name": "CSS3",
-        "image": "/css.png"
+        "image": "/skillset/css.svg"
       },
       {
         "name": "JavaScript",
-        "image": "/javascript.png"
+        "image": "/skillset/javascript.svg"
       },
       {
         "name": "React",
-        "image": "/react.png"
+        "image": "/skillset/react.svg"
       },
       {
         "name": "NodeJS",
-        "image": "/node.png"
+        "image": "/skillset/nodejs.svg"
       },
       {
-        "name": "Express",
-        "image": "/express.png"
+        "name": "Express.js",
+        "image": ""
       },
       {
         "name": "SQLite",
-        "image": "/sqlite.png"
+        "image": "/skillset/sqlite.svg"
       }
     ],
     "url": "https://gm2dev.com/"
@@ -64,34 +64,34 @@
   {
     "id": 0,
     "title": "Computer Technician",
-    "company": "Institute Industrial Huergo",
-    "date": "March 2019 - December 2024",
-    "image": "/huergo.png",
+    "company": "Ins. Ind. Huergo",
+    "date": "Mar 2019 - Dec 2024",
+    "image": "/education/huergo.png",
     "description": "I studied computer science at the Instituto Industrial Huergo. I learned about algorithms, data structures, software engineering, and computer architecture. I also learned about databases, networks, and operating systems. I worked on several projects, including a web application, a mobile app, and a game. I graduated with a Bachelor of Science in Computer Science.",
-    "tecnologies": [
+    "technologies": [
       {
         "name": "Python",
-        "image": "/python.png"
+        "image": "/skillset/python.svg"
       },
       {
         "name": "HTML5",
-        "image": "/html.png"
+        "image": "/skillset/html.svg"
       },
       {
         "name": "CSS3",
-        "image": "/css.png"
+        "image": "/skillset/css.svg"
       },
       {
         "name": "Bootstrap",
-        "image": "/bootstrap.png"
+        "image": "/skillset/bootstrap.svg"
       },
       {
         "name": "MySQL",
-        "image": "/sqlite.png"
+        "image": "/skillset/sqlite.svg"
       },
       {
         "name": "Visual Basic",
-        "image": "/visual-basic.png"
+        "image": "/skillset/visual-basic.svg"
       }
     ],
     "url": "https://huergo.edu.ar/"
