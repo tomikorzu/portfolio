@@ -1,11 +1,14 @@
+import data from "../../data/welcomeData.json"
+
 export default function SocialLinks() {
+    const {socials: {github, linkedin, calendly}} = data
   return (
     <>
       <ul className={`flex items-center sm:ml-2 justify-center gap-4 m-2`}>
         <li>
           <a
             className={`text-lg bg-[#3A506B] rounded-full flex justify-center items-center w-10 h-10  hover:brightness-150`}
-            href="https://github.com/tomikorzu"
+            href={github}
             target="_BLANK"
             style={{ transition: "all 0.4s" }}
           >
@@ -15,7 +18,7 @@ export default function SocialLinks() {
         <li>
           <a
             className={`text-lg bg-[#3A506B] rounded-full flex justify-center items-center w-10 h-10  hover:brightness-150`}
-            href="https://www.linkedin.com/in/tomas-korzusehec/"
+            href={linkedin}
             target="_BLANK"
             style={{ transition: "all 0.5s" }}
           >
@@ -25,7 +28,7 @@ export default function SocialLinks() {
         <li>
           <a
             className={`text-lg bg-[#3A506B] rounded-full flex justify-center items-center w-10 h-10  hover:brightness-150`}
-            href="https://calendly.com/tomykorzu/30min?month=2024-12"
+            href={calendly}
             target="_BLANK"
             style={{ transition: "all 0.5s" }}
           >

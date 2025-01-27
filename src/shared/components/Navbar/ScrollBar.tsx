@@ -21,8 +21,8 @@ export default function ScrollBar({ sections }: { sections: string[] }) {
       <ul
         className={`flex ${bgClass} rounded-full px-2 py-1 w-fit transition duration-[.4s]`}
       >
-        {sections.map((section) => {
-          return <Link key={section} name={section} />;
+        {sections.map((section, index) => {
+          return <Link key={index} name={section} />;
         })}
       </ul>
     </nav>
