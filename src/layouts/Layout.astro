@@ -15,12 +15,17 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="bg-gradient-to-l from-[#0b132b] to-[#1c2541] text-[#f1f1f1] mx-auto max-w-[900px]">
+  <body
+    class="bg-gradient-to-l from-[#0b132b] to-[#1c2541] text-[#f1f1f1] mx-auto max-w-[900px]"
+  >
     <slot />
   </body>
 </html>
 
 <style is:global>
+  :root {
+    color-scheme: dark;
+  }
   body {
     font-family: "Open-sans";
     transition:
