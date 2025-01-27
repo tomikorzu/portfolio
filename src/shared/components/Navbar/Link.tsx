@@ -34,7 +34,7 @@ export default function Link({ name }: { name: string }) {
         onClick={scrollToSection}
         className={`px-2 py-1 capitalize ${
           isInView ? "text-[#6cc7e8]" : "text-[#fff]"
-        } transition duration-500 hover:text-[#6cc7e8]`}
+        } transition duration-500 lg:hover:text-[#6cc7e8]`}
       >
         {name}
       </button>
