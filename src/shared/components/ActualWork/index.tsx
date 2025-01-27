@@ -5,8 +5,8 @@ export default function ActualWork() {
     <a
       href={
         welcomeData.workPage
-          ? "https://gm2dev.com"
-          : "https://www.linkedin.com/in/tomas-korzusehec/"
+          ? welcomeData.workPage
+          : welcomeData.socials.linkedin
       }
       target="_blank"
       className="flex items-center transition md:justify-center"
