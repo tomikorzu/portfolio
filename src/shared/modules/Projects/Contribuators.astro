@@ -1,0 +1,27 @@
+---
+const { data } = Astro.props;
+---
+
+{
+  data.length > 0 && (
+    <ul class="flex gap-2">
+      {data.map((user: string) => {
+        return (
+          <li>
+            <a
+              class="p-0 m-0"
+              href={`https://github.com/${user}`}
+              target="_blank"
+            >
+              <img
+                class="size-7 rounded-full"
+                src={`https://github.com/${user}.png`}
+                alt={`${user} Photo`}
+              />
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  )
+}
