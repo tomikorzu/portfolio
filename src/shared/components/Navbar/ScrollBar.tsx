@@ -19,7 +19,7 @@ export default function ScrollBar({ sections }: { sections: string[] }) {
   return (
     <nav className="fixed top-2 left-0 z-50 w-full hidden sm:flex justify-center items-center fade-in">
       <ul
-        className={`flex ${bgClass} rounded-full px-2 py-1 w-fit transition duration-[.4s]`}
+        className={`flex ${bgClass} rounded-full px-2 w-fit transition duration-[.4s]`}
       >
         {sections.map((section, index) => {
           return <Link key={index} name={section} />;
