@@ -1,14 +1,17 @@
-<section id="projects" class="min-h-screen">
-  <h1>Projects</h1>
-  <ul>
-    <li>
-      <a href="/projects/1">Project 1</a>
-    </li>
-    <li>
-      <a href="/projects/2">Project 2</a>
-    </li>
-    <li>
-      <a href="/projects/3">Project 3</a>
-    </li>
+---
+import projects from "../../data/projectsData.json";
+import Project from "./Project.astro";
+---
+
+<section id="projects" class="min-h-screen lg:p-0 lg:pt-16 p-5 pt-10 max-w-md mx-auto lg:max-w-none">
+  <h2 class="font-bold text-2xl flex gap-3 items-center">
+    <i class="fa-solid fa-bars-progress"></i>Projects
+  </h2>
+  <ul class="lg:pt-5 flex gap-2 flex-wrap flex-col w-full justify-center">
+    {
+      projects.map((project) => {
+        return <Project data={project} />;
+      })
+    }
   </ul>
 </section>
