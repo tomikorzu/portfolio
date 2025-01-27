@@ -3,6 +3,6 @@ const { data } = Astro.props;
 ---
 
 <li class={`bg-[#143a6d] flex items-center gap-2 rounded-full px-2 py-1`}>
- {data.logo && <img src={data.logo} alt={`${data.name} tecnology`} class="size-4" />}
+ {data.logo && <img src={data.logo} alt={`${data.name} tecnology`} class="size-4 object-contain" />}
   <span class="text-xs font-semibold">{data.name}</span>
 </li>
