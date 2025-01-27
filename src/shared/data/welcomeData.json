@@ -3,5 +3,11 @@
   "actualWork": "GM2Dev",
   "workPage": "https://gm2dev.com",
   "title": "Hey, I am Tomás Korzusehec",
-  "subtitle": "Full-Stack Developer from Argentina 🇦🇷 with experience in React, Astro, NodeJS, SQLite and other tecnologies"
+  "subtitle": "Software Engineer from Argentina 🇦🇷 with experience in NextJS, Astro, NodeJS, SQLite and other tecnologies.",
+  "socials": {
+    "email": "tomaskorzusehec@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/tomas-korzusehec/",
+    "github": "https://github.com/tomikorzu",
+    "calendly": "https://calendly.com/tomykorzu/30min?month=2024-12"
+  }
 }
