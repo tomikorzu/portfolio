@@ -1,0 +1,102 @@
+[
+  {
+    "id": 4,
+    "title": "Chat App",
+    "description": "This is a chat application that allows users to create rooms and chat with other users in real time. At the moment it is in web development, but the goal is to make it a mobile application too.",
+    "image": "/projects/chat-app.png",
+    "tecnologies": [
+      {
+        "name": "NextJS",
+        "logo": "/skillset/next.svg",
+        "bgColor": "333"
+      },
+      {
+        "name": "Socket.io",
+        "logo": "/skillset/socketio.svg",
+        "bgColor": "333"
+      },
+      {
+        "name": "TailwindCSS",
+        "logo": "/skillset/tailwind.svg",
+        "bgColor": "333"
+      },
+      { "name": "SQLite", "logo": "/skillset/sqlite.svg", "bgColor": "333" }
+    ],
+    "date": "1 Jan 2025 - In progress",
+    "contribuators": [],
+    "preview": "https://chatapp-8oct.onrender.com/",
+    "code": "https://github.com/tomikorzu/ChatApp"
+  },
+  {
+    "id": 3,
+    "title": "Back-Office",
+    "description": "This is the last project worked in the GM2Dev intership, It is a back-office simulator of GM2Dev employees. Also allows to manage users and employees.",
+    "image": "/projects/back-office.png",
+    "tecnologies": [
+      { "name": "React", "logo": "/skillset/react.svg", "bgColor": "333" },
+      { "name": "NodeJS", "logo": "/skillset/nodejs.svg", "bgColor": "333" },
+      { "name": "SQLite", "logo": "/skillset/sqlite.svg", "bgColor": "333" }
+    ],
+    "date": "15 Nov 2024 - 29 Nov 2024",
+    "contribuators": [
+      "MaiteGM2",
+      "LucasCirilloBerardi",
+      "tomastomastomastomastomastomas",
+      "4444Fede"
+    ],
+    "preview": "https://back-office-gm2dev.vercel.app/",
+    "code": ""
+  },
+  {
+    "id": 2,
+    "title": "Poke-Api",
+    "description": "Poke-Api is a web application that allows to search for pokemons and see their details. It uses the PokeAPI to get the data of the pokemons.",
+    "image": "/projects/poke-api.png",
+    "tecnologies": [
+      {
+        "name": "JavaScript",
+        "logo": "/skillset/javascript.svg",
+        "bgColor": "333"
+      }
+    ],
+    "date": "1 Oct 2024 - 7 Oct 2024",
+    "contribuators": [],
+    "preview": "https://poke-api-tk.vercel.app/",
+    "code": "https://github.com/tomikorzu/poke-api"
+  },
+  {
+    "id": 1,
+    "title": "Quiz Master",
+    "description": "This project allows users to create and play quizzes. It was made with JavaScript and the data is stored in the local storage.",
+    "image": "/projects/quiz-master.png",
+    "tecnologies": [
+      {
+        "name": "JavaScript",
+        "logo": "/skillset/javascript.svg",
+        "bgColor": "333"
+      }
+    ],
+    "date": "27 Aug 2024 - 23 Sep 2024",
+    "contribuators": [
+      "tomastomastomastomastomastomas",
+      "MaiteGM2",
+      "Agus-Iturria"
+    ],
+    "preview": "https://gm2-quiz-master.netlify.app/",
+    "code": "https://github.com/tomikorzu/Interactive-Quiz-Application"
+  },
+  {
+    "id": 0,
+    "title": "Landing Page",
+    "description": "This is the first GM2Dev intership project, a landing page of figma design. It was made with HTML and CSS. And the goal was also to make it responsive.",
+    "image": "/projects/landing-page.png",
+    "tecnologies": [
+      { "name": "HTML5", "logo": "/skillset/html.svg", "bgColor": "333" },
+      { "name": "CSS3", "logo": "/skillset/css.svg", "bgColor": "333" }
+    ],
+    "date": "12 Jun 2024 - 2 Jul 2024",
+    "contribuators": [],
+    "preview": "https://landing-page-pied-rho.vercel.app/",
+    "code": "https://github.com/tomikorzu/Landing-page"
+  }
+]
