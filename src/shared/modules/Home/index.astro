@@ -20,17 +20,25 @@ import ActualWork from "../../components/ActualWork/index.tsx";
   <h1 class="font-extrabold text-[22px] sm:text-3xl text-center my-1">
     {welcomeData.title}
   </h1>
-  <h2 class="max-w-md text-center sm:text-start text-sm sm:text-base font-bold text-[#cdced1]">
+  <h2
+    class="max-w-md text-center text-sm sm:text-base font-bold text-[#cdced1]"
+  >
     {welcomeData.subtitle}
   </h2>
   <MailCopy client:load />
   <SocialLinks />
-  <a
-    href="#projects"
+  <button
+    id="goToProjects"
     class="bg-[#1d68bd] text-sm px-4 py-2 mt-1 rounded-[10px] hover:brightness-[120%] transition-[filter] duration-[400ms] w-fit"
-    >My Projects</a
+    >My Projects</button
   >
 </section>
+
+<script>
+  document.getElementById("goToProjects")?.addEventListener("click", () => {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  });
+</script>
 
 <style is:global>
   .not-working {
