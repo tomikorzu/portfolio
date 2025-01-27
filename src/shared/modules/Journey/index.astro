@@ -1,28 +1,19 @@
 ---
 import Section from "../../../layouts/Section.astro";
 import Title from "../../../layouts/Title.astro";
+import Journal from "./Journal.astro";
+import data from "../../data/journeyData.json";
 ---
 
 <Section title="journey">
   <Title>
     <i class="fa-solid fa-compass"></i>Journey
   </Title>
-  <ul class="lg:pt-5 flex gap-2 flex-wrap flex-col w-full justify-center">
-    <li class="w-full lg:w-1/2">
-      <h2 class="text-2xl font-bold">2021</h2>
-      <p class="text-lg">I started my journey as a software developer.</p>
-    </li>
-    <li class="w-full lg:w-1/2">
-      <h2 class="text-2xl font-bold">2020</h2>
-      <p class="text-lg">I started my journey as a software developer.</p>
-    </li>
-    <li class="w-full lg:w-1/2">
-      <h2 class="text-2xl font-bold">2019</h2>
-      <p class="text-lg">I started my journey as a software developer.</p>
-    </li>
-    <li class="w-full lg:w-1/2">
-      <h2 class="text-2xl font-bold">2018</h2>
-      <p class="text-lg">I started my journey as a software developer.</p>
-    </li>
+  <ul class="flex flex-col mt-8">
+    {
+      data.map((d) => {
+        if (d.id !== 2) return <Journal data={d} />;
+      })
+    }
   </ul>
 </Section>
