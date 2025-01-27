@@ -1,14 +1,53 @@
-<section id="skillset" class="min-h-screen">
-  <h1>Skill Set</h1>
-  <ul>
-    <li>
-      <a href="/skillset/1">Skill 1</a>
-    </li>
-    <li>
-      <a href="/skillset/2">Skill 2</a>
-    </li>
-    <li>
-      <a href="/skillset/3">Skill 3</a>
-    </li>
-  </ul>
-</section>
+---
+import Section from "../../../layouts/Section.astro";
+import Title from "../../../layouts/Title.astro";
+---
+
+<Section title="skillset">
+  <Title><i class="fa-solid fa-home"></i>My Skillset</Title>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <h2 class="text-2xl font-bold">Frontend</h2>
+      <ul class="list-disc list-inside">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Vue</li>
+        <li>Angular</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold">Backend</h2>
+      <ul class="list-disc list-inside">
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>Python</li>
+        <li>Django</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold">Database</h2>
+      <ul class="list-disc list-inside">
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+        <li>SQLite</li>
+        <li>Redis</li>
+        <li>Oracle</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold">DevOps</h2>
+      <ul class="list-disc list-inside">
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>CI/CD</li>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </div></Section
+>
