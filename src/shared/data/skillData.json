@@ -2,63 +2,70 @@
   "technologies": [
     {
       "name": "TypeScript",
-      "image": "/public/skillset/typescript.png",
+      "image": "/skillset/typescript.png",
       "url": "https://www.typescriptlang.org/"
     },
     {
       "name": "NextJS",
-      "image": "/public/skillset/next.svg",
+      "image": "/skillset/next.svg",
       "url": "https://nextjs.org/"
     },
     {
       "name": "TailwindCSS",
-      "image": "/public/skillset/tailwind.svg",
+      "image": "/skillset/tailwind.svg",
       "url": "https://tailwindcss.com/"
     },
     {
       "name": "React",
-      "image": "/public/skillset/react.svg",
+      "image": "/skillset/react.svg",
       "url": "https://reactjs.org/"
     },
     {
       "name": "Astro",
-      "image": "/public/skillset/astro.svg",
+      "image": "/skillset/astro.svg",
       "url": "https://astro.build/"
     },
     {
       "name": "NodeJS",
-      "image": "/public/skillset/nodejs.svg",
+      "image": "/skillset/nodejs.svg",
       "url": "https://nodejs.org/"
     },
     {
       "name": "Socket.io",
-      "image": "/public/skillset/socketio.svg",
+      "image": "/skillset/socketio.svg",
       "url": "https://socket.io/"
     },
     {
       "name": "SQLite",
-      "image": "/public/skillset/sqlite.svg",
+      "image": "/skillset/sqlite.svg",
       "url": "https://www.sqlite.org/index.html"
     },
     {
       "name": "GIT",
-      "image": "/public/skillset/git.png",
+      "image": "/skillset/git.png",
       "url": "https://git-scm.com/"
     }
   ],
   "tools": [
-    {"name": "GitHub",
-      "image": "/public/skillset/github.svg",
-      "url": "https://github.com"},
+    {
+      "name": "GitHub",
+      "image": "/skillset/github.svg",
+      "url": "https://github.com"
+    },
     {
       "name": "Vercel",
-      "image": "/public/skillset/vercel.svg",
+      "image": "/skillset/vercel.svg",
       "url": "https://vercel.com/"
-    },{
-        "name": "Postman",
-        "image": "/public/skillset/postman.svg",
-        "url": "https://www.postman.com/"
     },
-    {"name": "Slack", "image": "/public/skillset/slack.png", "url": "https://slack.com"}
+    {
+      "name": "Postman",
+      "image": "/skillset/postman.svg",
+      "url": "https://www.postman.com/"
+    },
+    {
+      "name": "Slack",
+      "image": "/skillset/slack.png",
+      "url": "https://slack.com"
+    }
   ]
 }
