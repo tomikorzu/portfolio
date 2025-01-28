@@ -1,53 +1,31 @@
 ---
 import Section from "../../../layouts/Section.astro";
 import Title from "../../../layouts/Title.astro";
+import data from "../../data/skillData.json";
+import Skill from "./Skill.astro";
+import Subtitle from "./Subtitle.astro";
 ---
 
 <Section title="skillset">
-  <Title><i class="fa-solid fa-home"></i>My Skillset</Title>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div>
-      <h2 class="text-2xl font-bold">Frontend</h2>
-      <ul class="list-disc list-inside">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Vue</li>
-        <li>Angular</li>
+  <Title><i class="fa-solid fa-computer"></i>My Skillset</Title>
+  <Subtitle>Programming</Subtitle>
+  {
+    data.technologies && (
+      <ul class="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
+        {data.technologies.map((tech) => {
+          return <Skill data={tech} />;
+        })}
       </ul>
-    </div>
-    <div>
-      <h2 class="text-2xl font-bold">Backend</h2>
-      <ul class="list-disc list-inside">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PHP</li>
-        <li>Laravel</li>
-        <li>Python</li>
-        <li>Django</li>
+    )
+  }
+  <Subtitle>Tools</Subtitle>
+  {
+    data.tools && (
+      <ul class="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
+        {data.tools.map((tool) => {
+          return <Skill data={tool} />;
+        })}
       </ul>
-    </div>
-    <div>
-      <h2 class="text-2xl font-bold">Database</h2>
-      <ul class="list-disc list-inside">
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>PostgreSQL</li>
-        <li>SQLite</li>
-        <li>Redis</li>
-        <li>Oracle</li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="text-2xl font-bold">DevOps</h2>
-      <ul class="list-disc list-inside">
-        <li>Docker</li>
-        <li>Kubernetes</li>
-        <li>CI/CD</li>
-        <li>Git</li>
-        <li>GitHub</li>
-      </ul>
-    </div>
-  </div></Section
->
+    )
+  }
+</Section>
