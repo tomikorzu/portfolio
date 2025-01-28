@@ -6,9 +6,22 @@
   "subtitle": "Software Engineer from Argentina 🇦🇷 with experience in NextJS, Astro, NodeJS, SQLite and other tecnologies.",
   "socials": {
     "email": "tomaskorzusehec@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/tomas-korzusehec/",
-    "github": "https://github.com/tomikorzu",
-    "calendly": "https://calendly.com/tomykorzu/30min?month=2024-12",
-    "CV": "/CV_Tomas_Korzusehec.pdf"
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/tomikorzu",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/tomas-korzusehec/",
+        "icon": "fa-brands fa-linkedin"
+      },
+      {
+        "name": "CV",
+        "url": "/CV_Tomas_Korzusehec.pdf",
+        "icon": "fa-regular fa-file-pdf"
+      }
+    ]
   }
 }
