@@ -28,7 +28,7 @@
     "company": "GM2Dev",
     "date": "Jun 2024 - Dec 2024",
     "image": "/experience/gm2.jpg",
-    "description": "I worked as a full-stack developer intern. I worked on a project that involved creating a web application using React, Node.js, and SQLite. I also worked on the backend, creating RESTful APIs and integrating them with the frontend. I learned a lot about web development and gained valuable experience working in a team.",
+    "description": "I worked as a Full-Stack developer intern. I worked on projects that involved creating a web application using and learning technologies like HTML, CSS, JavaScript, NodeJS and others. I also worked on the backend, creating RESTful APIs and integrating them with the frontend. I learned a lot about web development and gained valuable experience working in a team.",
     "technologies": [
       {
         "name": "HTML5",
@@ -67,7 +67,7 @@
     "company": "Ins. Ind. Huergo",
     "date": "Mar 2019 - Dec 2024",
     "image": "/education/huergo.png",
-    "description": "I studied computer science at the Instituto Industrial Huergo. I learned about algorithms, data structures, software engineering, and computer architecture. I also learned about databases, networks, and operating systems. I worked on several projects, including a web application, a mobile app, and a game. I graduated with a Bachelor of Science in Computer Science.",
+    "description": "I studied computer science at the Instituto Industrial Huergo. I learned the basics of computer science, programming and web development. I also resolved technical and logic problems, developed many projects with Visual Basic and Python. In the last year I was selected to participate in the Full-Stack internship at GM2Dev. Where I finally got my first job as a software engineer.",
     "technologies": [
       {
         "name": "Python",
