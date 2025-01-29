@@ -6,14 +6,22 @@ import Projects from "../shared/modules/Projects/index.astro";
 import Journey from "../shared/modules/Journey/index.astro";
 import SkillSet from "../shared/modules/SkillSet/index.astro";
 import About from "../shared/modules/About/index.astro";
+import Navbar from "../shared/components/Navbar";
+import GoHomeBtn from "../shared/components/GoHomeBtn";
+import Footer from "../shared/components/Footer/index.astro";
 ---
 
 <Layout title="Welcome 👋🏻" background="true">
-  <main>
+  <header class="mx-auto max-w-[900px]">
+    <Navbar client:load />
+    <GoHomeBtn client:load />
+  </header>
+  <main class="mx-auto max-w-[900px]">
     <Home />
     <Projects />
     <Journey />
     <SkillSet />
     <About />
   </main>
+  <Footer />
 </Layout>

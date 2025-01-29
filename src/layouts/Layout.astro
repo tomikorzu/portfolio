@@ -4,8 +4,6 @@ const { title } = Astro.props;
 import "../assets/fonts/fonts.css";
 import "../assets/icons/fontawesome/css/all.min.css";
 import "../assets/icons/bootstrap/font/bootstrap-icons.css";
-import Navbar from "../shared/components/Navbar";
-import GoHomeBtn from "../shared/components/GoHomeBtn";
 ---
 
 <html lang="en">
@@ -18,13 +16,9 @@ import GoHomeBtn from "../shared/components/GoHomeBtn";
     <ViewTransitions />
   </head>
   <body
-    class="bg-gradient-to-l from-[#0b132b] to-[#1c2541] text-[#f1f1f1] mx-auto max-w-[900px]"
+    class="relative bg-gradient-to-l from-[#0b132b] to-[#1c2541] text-[#f1f1f1]"
   >
-    <header>
-      <Navbar client:load />
-    </header>
     <slot />
-    <GoHomeBtn client:load />
   </body>
 </html>
 
