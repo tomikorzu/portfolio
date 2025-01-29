@@ -1,9 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-import GoHomeBtn from "../shared/components/GoHomeBtn/index.tsx";
-import Navbar from "../shared/components/Navbar/index.tsx";
-
 import Home from "../shared/modules/Home/index.astro";
 import Projects from "../shared/modules/Projects/index.astro";
 import Journey from "../shared/modules/Journey/index.astro";
@@ -12,9 +9,6 @@ import About from "../shared/modules/About/index.astro";
 ---
 
 <Layout title="Welcome 👋🏻" background="true">
-  <header>
-    <Navbar client:load />
-  </header>
   <main>
     <Home />
     <Projects />
@@ -22,5 +16,4 @@ import About from "../shared/modules/About/index.astro";
     <SkillSet />
     <About />
   </main>
-  <GoHomeBtn client:load />
 </Layout>
