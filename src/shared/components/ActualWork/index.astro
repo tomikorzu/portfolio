@@ -1,0 +1,29 @@
+---
+import welcomeData from "../../data/welcomeData.json";
+---
+
+<a
+  href={welcomeData.workPage
+    ? welcomeData.workPage
+    : welcomeData.socials.links[1].url}
+  target="_blank"
+  class="flex items-center transition md:justify-center"
+>
+  <div class="flex items-center transition duration-300">
+    <span class="relative inline-flex overflow-hidden rounded-full p-0.5">
+      <span
+        class={`absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] ${
+          welcomeData.actualWork ? "working" : "not-working"
+        }`}></span>
+      <div
+        class="items-center justify-center w-full px-3 py-2 text-sm rounded-full bg-slate-800 text-white/90 backdrop-blur-md hover:brightness-125 transition duration-500"
+      >
+        {
+          welcomeData.actualWork
+            ? `Working in ${welcomeData.actualWork}`
+            : "Avaible to Work"
+        }
+      </div>
+    </span>
+  </div>
+</a>
