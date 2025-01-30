@@ -1,6 +1,6 @@
 ---
-import Section from "../../../layouts/Section.astro";
-import Title from "../../../layouts/Title.astro";
+import Section from "../../components/Section/index.astro";
+import Title from "../../components/Title/index.astro";
 import Paragraph from "./Paragraph.astro";
 import data from "../../data/aboutData.json";
 ---
@@ -16,7 +16,11 @@ import data from "../../data/aboutData.json";
     <div
       class="w-full mt-2 p-2 rounded-2xl bg-[#2c2f36] border border-[#555557]"
     >
-      <img src={data.image} alt="My Photo" class="object-cover rounded-2xl w-full h-full" />
+      <img
+        src={data.image}
+        alt="My Photo"
+        class="object-cover rounded-2xl w-full h-full"
+      />
     </div>
   </div>
 </Section>
