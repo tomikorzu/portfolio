@@ -22,7 +22,7 @@ import Tecnology from "./Tecnology.astro";
     <ul class="flex flex-wrap gap-2">
       {data.tecnologies.map((tecno: string) => <Tecnology data={tecno} />)}
     </ul>
-    <h4 class="text-[#cdced1] font-semibold text-sm lg:text-base">
+    <h4 class="text-[--secondary-text-color] font-semibold text-sm lg:text-base">
       {data.description}
     </h4>
     <Contribuators data={data.contribuators} />

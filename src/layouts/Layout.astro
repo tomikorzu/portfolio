@@ -16,7 +16,7 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
     <ViewTransitions />
   </head>
   <body
-    class="relative bg-gradient-to-l from-[#0b132b] to-[#1c2541] text-[#f1f1f1]"
+    class="relative bg-gradient-to-t from-[--main-bg-color-from] to-[--main-bg-color-to] text-[--main-text-color]"
   >
     <slot />
   </body>
@@ -25,6 +25,17 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
 <style is:global>
   :root {
     color-scheme: dark;
+    --main-bg-color-from: #09132e;
+    --main-bg-color-to: #152146;
+    --main-text-color: #f1f1f1;
+    --secondary-text-color: #cdced1;
+
+    /* Navbar */
+    --navbar-bg-color: #303a4f;
+    --navbar-hover-text-color: #6cc7e8;
+
+    /* About */
+    --about-text-color: #c9d1fd;
   }
   body {
     font-family: "Open-sans";
@@ -81,6 +92,21 @@ import "../assets/icons/bootstrap/font/bootstrap-icons.css";
   }
   .show-menu-reverse {
     animation: showMenu 0.2s ease-in-out reverse;
+  }
+
+  .slide-left {
+    animation: slideLeft 0.4s ease-in-out;
+  }
+
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   @keyframes fadeIn {

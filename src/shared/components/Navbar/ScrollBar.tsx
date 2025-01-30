@@ -7,7 +7,7 @@ export default function ScrollBar({ sections }: { sections: string[] }) {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
-        setBgClass("bg-[#303a4f]");
+        setBgClass("bg-[--navbar-bg-color]");
       } else {
         setBgClass("bg-[transparent]");
       }

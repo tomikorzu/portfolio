@@ -19,7 +19,7 @@ export default function Link({ name }: { name: string }) {
         ([entry]) => {
           setIsInView(entry.isIntersecting);
         },
-        { threshold: 0.3 }
+        { threshold: 0.2 }
       );
 
       observer.observe(section);
@@ -33,8 +33,10 @@ export default function Link({ name }: { name: string }) {
       <button
         onClick={scrollToSection}
         className={`px-2 py-1 capitalize ${
-          isInView ? "text-[#6cc7e8]" : "text-[#fff]"
-        } transition duration-500 lg:hover:text-[#6cc7e8]`}
+          isInView
+            ? "text-[--navbar-hover-text-color]"
+            : "text-[--main-text-color]"
+        } transition duration-500 lg:hover:text-[--navbar-hover-text-color]`}
       >
         {name}
       </button>
