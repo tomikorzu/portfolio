@@ -1,0 +1,16 @@
+---
+import GoHomeBtn from "../shared/components/GoHomeBtn";
+import Navbar from "../shared/components/Navbar";
+import Layout from "./Layout.astro";
+import Footer from "../shared/components/Footer/index.astro";
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <header class="mx-auto max-w-[900px]">
+    <Navbar client:load />
+    <GoHomeBtn client:load />
+  </header>
+  <slot />
+  <Footer />
+</Layout>
