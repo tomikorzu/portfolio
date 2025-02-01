@@ -4,9 +4,9 @@ Here you will see all the projects I have worked on. I have experience in JavaSc
 
 ## Contact Me
 
-- [LinkedIn](https://www.linkedin.com/in/TomasKorzusehec)
+- [LinkedIn](https://www.linkedin.com/in/tomas-korzusehec)
 - [GitHub](https://github.com/tomikorzu)
-- [Email](mailto:tomykorzu@icloud.com)
+- [Email](mailto:tomaskorzusehec@gmail.com)
 
 ## Set this portfolio up
 
@@ -15,16 +15,4 @@ To set up this portfolio, you will need to follow the steps below:
 1. Clone this repository
 2. Open the repository in your code editor
 3. Install the necessary dependencies by running `npm install`
-4. Run the portfolio by running `npm dev`
-
-## Contribuate in this portfolio
-
-If you would like to contribute to this portfolio, please follow the steps below:
-
-1. Fork this repository
-2. Create a new branch (`git checkout -b improve-portfolio`)
-3. Make the appropriate changes in the files
-4. Add changes to reflect the changes made
-5. Commit your changes (`git commit -m 'Improve portfolio'`)
-6. Push to the branch (`git push origin improve-portfolio`)
-7. Create a Pull Request
+4. Run the portfolio by running `npm run dev`
